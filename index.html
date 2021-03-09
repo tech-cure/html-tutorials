@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Tutorials</title>
+    <link rel="stylesheet" href="css/style.css">
+    <nav class="navbar">
+
+        <div class="logo-title">HTML Tutorials</div>
+
+        <div class="links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</head> 
+<body class="body">
+    <section id="home">
+
+        <img src="https://www.tutorialrepublic.com/lib/images/html-illustration.png" alt="html-logo" class="home-logo">
+        
+        <p class="home-text-heading">
+            What is HTML?<br>The Basics of Hypertext Markup Language Explained
+        </p>
+        
+        <p class="home-text-main">
+            HTML stands for Hypertext Markup Language. It allows the user to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications. <br> <br>
+            HTML is not a programming language, meaning it doesn’t have the ability to create dynamic functionality. Instead, it makes it possible to organize and format documents, similarly to Microsoft Word. <br> <br>
+            When working with HTML, we use simple code structures (tags and attributes) to mark up a website page. For example, we can create a paragraph by placing the enclosed text within a starting &lt;p&gt; and closing &lt;/p&gt; tag. <br> <br>
+            Overall, HTML is a markup language that is really straightforward and easy to learn even for complete beginners in website building. 
+        </p>
+
+        <p id="tutorials"class="home-text-links">
+            All Tutorials :- 
+            <a href="#intro">Introduction and Document Structure</a> | 
+            <a href="#text-format">Basic Text Forammating</a> | 
+            <a href="#images-links">Images and HyperLinks</a> | 
+        </p>
+
+    </section>    
+    
+
+    <section class="tutorials">
+
+        <div id="intro" class="intro">
+            <p class="intro-heading">
+                Introduction and Document Structure
+            </p>
+        </div>
+
+        <div class="intro-code">
+            <xmp class="intro-code-block">
+    <!DOCTYPE html> 
+
+    <html> 
+        <head> 
+            <title> 
+                    
+            </title> 
+        </head> 
+            
+        <body> 
+                
+        </body> 
+    </html>
+            </xmp>
+        </div>
+
+        <div class="intro-text">
+            <p><strong>Tags in HTML</strong>: Tags are one of the most important part in an HTML Document. HTML uses some predefined tags which tells the browser about content display property, that is how to display a particular given content. For Example, to create a paragraph, one must use the paragraph tags(&lt;p&gt; &lt;/p&gt;) and to insert an image one must use the img tags(&lt;img /&gt;). </p>
+            <p>There are generally two types of tags in HTML:</p>
+            <ol>
+            <li><strong>Paired Tags</strong>: These tags come in pairs. That is they have both opening(&lt; &gt;) and closing(&lt;/ &gt;) tags.</li>
+            <li><strong>Singular Tags</strong>: These tags do not required to be closed.</li>
+            </ol>
+            <div align="center"><b>Structure of an HTML Document</b></div>
+            <p>An HTML Document is mainly divided into two parts:</p>
+            <ul>
+            <li><strong>HEAD</strong>: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta Data etc.</li>
+            <li><strong>BODY</strong>: This contains everything you want to display on the Web Page.</li>
+            </ul>
+
+            <p>Every Webpage must contain this code. Below is the complete explanation of each of the tags used in the above piece of HTML code:</p>
+            <p><strong>&lt;!DOCTYPE html&gt;:</strong> This tag is used to tells the HTML version. This currently tells that the version is HTML 5.</p>
+            <p><strong>&lt;html&gt;:</strong> This is called HTML root element and used to wrap all the code.</p>
+            <p><strong>&lt;head&gt;:</strong> Head tag contains metadata, title, page CSS etc. All the HTML elements that can be used inside the &lt;head&gt; element are:</p>
+            <ul>
+            <li>&lt;style&gt;</li>
+            <li>&lt;title&gt;</li>
+            <li>&lt;base&gt;</li>
+            <li>&lt;noscript&gt;</li>
+            <li>&lt;script&gt;</li>
+            <li>&lt;meta&gt;</li>
+            <p>We will learn about these in details later.
+            </ul>
+            <p><strong>&lt;body&gt;:</strong> Body tag is used to enclosed all the data which a web page has from texts to links. All of the content that you see rendered in the browser is contained within this element. </p>
+        </div>
+
+        <div id="text-format" class="text-foramtting">
+            <p class="text-formatting-heading">
+                Basic Text Formatting
+            </p>
+
+            <div class="text-code">
+                <xmp class="text-code-block">
+ <body> 
+    <!--Normal text-->
+    <p>Hello World</p> 
+
+    <!--Text in Bold-->
+    <p><b>Hello World</b></p> 
+
+    <!--Text in Strong-->    
+    <p><strong>Hello World</strong></p> 
+
+    <!--Text in Italics-->
+    <p><i>Hello World</i></p> 
+
+    <!--Text in Emphasize-->    
+    <p><em>Hello World</em></p> 
+
+    <!--Text in Highlight-->    
+    <p><mark>Hello World</mark></p>
+
+    <!--Text in Insert-->    
+    <p><ins>Hello World</ins></p>     
+
+    <!--Text in Delete-->    
+    <p><del>Hello World</del></p> 
+ </body> 
+                </xmp>
+            </div>
+            
+            <div class="text-format-text">
+                <p>HTML provides us with the ability for formatting text just like we do it in MS Word or any text editing software. In this article, we would go through few such options.</p>
+                <ol>
+                    <li><strong>Making text Bold or Strong</strong>: We can make the text <strong>bold</strong> using the <strong>&lt;b&gt;</strong> tag. The tag uses both opening and closing tag. The text that needs to be made bold must be within <strong>&lt;b&gt;</strong> and <strong>&lt;/b&gt;</strong> tag.<br /></li>
+                    We can also use the <strong>&lt;strong&gt;</strong> tag to make the text strong, with added semantic importance. It also opens with &lt;strong&gt; and ends with &lt;/strong&gt; tag.<br /></li>
+                    
+                    <br><li><strong>Making text <em>Italic</em> or <em>emphasize</em>:</strong> The <strong>&lt;i&gt;</strong> tag is used to <em>italicise</em> the text. It opens with &lt;i&gt; and ends with &lt;/i&gt; tag.<br /></li>
+                        The <strong>&lt;em&gt;</strong> tag is used to <em>emphasize</em> the text, with added semantic importance. It opens with &lt;em&gt; and ends with &lt;/em&gt; tag.<br /></li>
+                    
+                    <br><li><strong>Highlighting a text:</strong> It is also possible to highlight a text in HTML using the <strong>&lt;mark&gt;</strong> tag. It has a opening tag &lt;mark&gt; and a closing tag &lt;/mark&gt;.<br /></li>
+                    
+                    <br><li><strong>Striking through the text:</strong> The <strong>&lt;del&gt;</strong> element is used to strike through the text marking the part as deleted. It also has an opening and a closing tag.<br /></li>
+                    
+                    <br><li><strong>Adding a text:</strong> The <strong>&lt;ins&gt;</strong> element is used to underline a text marking the part as inserted or added. It also has an opening and a closing tag.<br /></li>
+ 
+                </ol>
+            </div>
+        </div>
+
+        <div id="images-links" class="images-links">
+            <p class="images-links-heading">
+                Images and Hyperlinks
+            </p>
+
+            <div class="images-code">
+                <xmp class="images code-block">
+
+
+  <!DOCTYPE html> 
+  <html> 
+    
+   <head> 
+       <title>Inserting an image 
+                using "img" tag</title> 
+   </head> 
+    
+   <body> 
+        <p>inserted image using <img> tag:
+                                    </p> 
+      
+        <img src="myImage.png" 
+           alt="World logo"> 
+   
+   </body> 
+   
+  </html> 
+                </xmp>
+            </div>
+            
+            <div class="images-text">
+                <p><strong>Images : </strong></p>
+                <p>Earlier, the webpages used to comprise of only texts, which made them appear quite boring and uninteresting. Fortunately, it wasn&#8217;t long enough that the ability to embed images on web pages was added for users. Let&#8217;s see how to add images on a webpage.</p>
+                <p>Adding images on a webpage :<br />
+                The &#8220;img&#8221; tag is used to add images on a webpage. The &#8220;img&#8221; tag is an empty tag, which means it can contain only a list of attributes and it has no closing tag.</p>
+                <p>Syntax :</p>
+                <pre class="pre-code">
+                &lt;img src="url" alt="some_text"&gt;
+                </pre>
+                <p>
+                Attribute:</p>
+                <ul>
+                <li><strong>src:</strong><br />
+                src stands for source. Every image has a src attribute which tells the browser where to find the image you want to display. The URL of the image provided points to the location where the image is stored.</li>
+                <li><strong>alt:</strong>If the image cannot be displayed then the alt attribute acts as an alternative description for the image. The value of the alt attribute is an user-defined text.</li>
+                </ul>
+
+                <p><strong>Hyperlinks : </strong></p>
+                <p>HTML links are hyperlinks.
+                <br>You can click on a link and jump to another document.
+                <br>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+                <p>Note: A link does not have to be text. A link can be an image or any other HTML element!</p>
+                <p>Syntax: The HTML &lt;a&gt; tag defines a hyperlink.<pre>
+                    &lt;a href="url"&gt;link text&lt;/a&gt;</pre></p> 
+                <p>Attributes: By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+                <p>The <code class="w3-codespan">target</code> attribute specifies where to open the linked document.</p>
+                <p>The <code class="w3-codespan">target</code> attribute can have one of the following values:</p>
+                <ul>
+                <li><code class="w3-codespan">_self</code> - Default. Opens the document in 
+                the same window/tab as it was clicked</li>
+                <li><code class="w3-codespan">_blank</code> - Opens the document in a new window or tab</li>
+                <li><code class="w3-codespan">_parent</code> - Opens the document in the parent frame</li>
+                <li><code class="w3-codespan">_top</code> - Opens the document in the full body of the window</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="about">
+        Thanks for Checking out My Site!
+    </section>
+</body>
+</html>
