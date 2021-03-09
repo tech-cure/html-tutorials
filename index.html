@@ -17,7 +17,11 @@
             </ul>
         </div>
     </nav>
-
+    <script>
+        function scrollToTop() {
+            window.scrollTo(0,0);
+        }
+    </script>
 </head> 
 <body class="body">
     <section id="home">
@@ -225,7 +229,32 @@
     </section>
 
     <section id="about">
-        Thanks for Checking out My Site!
+        <footer>
+            <div class="footer-main">
+                <div class="text">
+                        <div class="footer-links">
+                        <a  class="nav-link" href="https://tech-cure.github.io/html-tutorials/">HTML Tutorials</a> | 
+                        <a  class="nav-link" href="#home">Home</a> | 
+                        <a  class="nav-link" href="#tutorials">Tutorials</a> | 
+                        <a  class="nav-link" href="#about">About</a> | 
+                        <a  class="nav-link" href="https://github.com/tech-cure/html-tutorials/">Source</a>        
+                        </div>
+                        <div class="copyright">
+                            (c) A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+                        </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="to-the-top" style="position: fixed;
+        bottom: -4px;
+        right: 10px;">
+
+<button class="button" onclick="scrollToTop()" style="background-color : #31B0D5;
+                                color: white;
+                                padding: 10px 20px;
+                                border-radius: 4px;
+                                border-color: #46b8da;">To The Top</button>
     </section>
 </body>
 </html>
